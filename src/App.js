@@ -4,7 +4,7 @@ import About from './pages/About';
 // import Discover from './pages/Discover';
 // import Search from './pages/Search';
 // import Navbar from './components/Navbar';
-// import Wrapper from './components/Wrapper'; 
+// import Wrapper from './components/Wrapper';
 
 
 
@@ -12,8 +12,8 @@ const App = () => (
 
     <Router>
         <div>
-            
-                    <Route exact path="/" component={About} />
+    
+                <Route exact path="/" component={About} />
 
                 
 
