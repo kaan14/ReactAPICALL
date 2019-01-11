@@ -4,7 +4,7 @@ import About from './pages/About';
 import Discover from './pages/Discover';
 import Search from './pages/Search';
 import Navbar from './components/Navbar';
-// import Wrapper from './components/Wrapper';
+import Wrapper from './components/Wrapper';
 
 
 
@@ -14,9 +14,12 @@ const App = () => (
         
         <div>
         <Navbar/>
+        <Wrapper>
                 <Route exact path="/" component={About} />
                 <Route exact path="/discover" component={Discover} />
                 <Route exact path="/search" component={Search}/>
+          
+          </Wrapper>      
         </div>
     </Router>
 

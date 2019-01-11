@@ -5,7 +5,7 @@ import "./Navbar.css";
 
 const Navbar = props => (
     <div>
-        <nav className="" >
+        <nav className="navbar navbar-expand-lg navbar-light bg-light" >
             <Link className="navbar-brand" to="/">
                 Kaan's Kawasaki
            </Link>
@@ -17,7 +17,7 @@ const Navbar = props => (
                                 window.location.pathname === "/" ||
                                     window.location.pathname === "/about"
                                     ? "nav-link active"
-                                    : "nav -link"
+                                    : "nav-link"
                             }
                         >
                             About
