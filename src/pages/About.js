@@ -7,13 +7,13 @@ import Row from '../components/Row';
 const About = () => (
 
     <div>
-        <Hero backgroundImage="https://images.unsplash.com/photo-1529504426707-d1d7a0dc458a?ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80.com/photos/pIs_JZT49lo">
-            <h1>Motocycle Equipments</h1>
-            <h2>Safety is first for you and your loved ones!!</h2>
+        <Hero backgroundImage="https://images.unsplash.com/photo-1486868451447-83c6bf387a38?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80">
+            <h1>Partner in Crime Finder</h1>
+            <h2>Safety is First</h2>
         </Hero>
         <Container style={{ marginTop: 30 }}>
             <Row >
-                <h1>Welcome to Motocycle Lowers Fan Page </h1>
+                <h1> Find Your Soulmate </h1>
             </Row>
 
             <p>
