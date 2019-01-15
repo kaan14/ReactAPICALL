@@ -2,5 +2,6 @@
     "editor.formatOnSave": true, 
     "prettier.printWidth":100,
     "prettier.singleQuote": true,
-    "prettier.trailingComa":"all"
+    "prettier.trailingComa":"all",
+    "eslint.autoFixOnSave": true
 }
