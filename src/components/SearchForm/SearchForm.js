@@ -3,7 +3,11 @@ import './SearchForm.css';
 
 
 const SearchForm = props => (
-
+    <div>
+        <div className="jumbotron">
+            <h1>We 'll find your soulmate</h1>
+            <p>Search by Name</p>
+        </div>
     <form className="search">
     <div className="form-group">
         <label>Search</label>
@@ -21,6 +25,8 @@ const SearchForm = props => (
         <button onClick={props.Functions} type="submit" className="btn">Search</button>
         </div>
     </form>
+
+    </div>
 
 ); 
 
