@@ -7,7 +7,7 @@ const Navbar = props => (
     <div>
         <nav className="navbar navbar-expand-lg navbar-light bg-light" >
             <Link className="navbar-brand" to="/">
-                Kaan's Kawasaki
+                Finder
            </Link>
             <div>
                 <ul className="navbar-nav">
