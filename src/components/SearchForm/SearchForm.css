@@ -1,0 +1,15 @@
+form.search{
+    overflow: auto;
+    margin: 90px 90px 90px 90px; 
+    font-size: 40px; 
+} 
+
+.btn[type="submit"] {
+    float: right;
+    margin: 20px;
+}
+
+.jumbotron{
+    font-size: 80px;
+    background-color:wheat; 
+}

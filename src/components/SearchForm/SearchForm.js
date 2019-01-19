@@ -16,13 +16,13 @@ const SearchForm = props => (
             onChange={props.Function}
             placeholder="search for any time of a person"
             id="personType"  
-            className="form-control"      
+            className="form-control form-control-lg"      
         />
         {/* <datalist id="personTypes">
         {props.types.map(type=><option value={type} key={type}/>)}
         </datalist> */}
 
-        <button onClick={props.Functions} type="submit" className="btn">Search</button>
+        <button onClick={props.Functions} type="submit" className ="btn btn-success">Search</button>
         </div>
     </form>
 
