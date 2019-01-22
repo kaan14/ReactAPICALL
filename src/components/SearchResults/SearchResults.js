@@ -1,12 +1,13 @@
-import React, { Component } from "react";
-import SearchForm from '../SearchForm'; 
+import React from "react";
+import './SearchResults.css'; 
 
-class SearchResults extends Component {
-  states = {};
 
-  render() {
-    return <div />;
-  }
-}
 
+const SearchResults = props => (
+    <div>
+        <div className = "cart">
+            <img className="cart-image-top" src={props.image}/>
+            <
+    </div>
+)
 export default SearchResults;
