@@ -3,9 +3,13 @@ import Axios from 'axios';
 
 export default {
 
-    searchPerson: function(){
+    searchPerson: function(person){
         return Axios.get("api URL"); 
     }
+
+    
+
+
 
 
 

@@ -11,6 +11,28 @@ import SearchPerson from '../utils/APIs';
 
 class Search extends Component {
 
+    state={
+
+    }
+
+
+    componentDidMount(){
+        API.
+    }
+
+
+
+    handleInputChange = event => {
+
+
+    }
+
+
+
+
+    handleFormSubmit = event => {
+
+    }
     render(){
         return(
             <SearchForm/>
