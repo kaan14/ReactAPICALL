@@ -13,7 +13,7 @@ const SearchForm = props => (
                 <label>Search</label>
                 <input
                     value={props.search}
-                    onChange={props.Function}
+                    onChange={props.handleInputChange}
                     placeholder="search for any time of a person"
                     id="personType"
                     className="form-control form-control-lg"

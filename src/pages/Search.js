@@ -19,15 +19,16 @@ class Search extends Component {
         error: ""
     };
 
-    componentDidMount() {
+    componentDidMount(){
         API.getBaseBreeds()
-            .then(res => this.setState({ breeds: res.data.message }))
-            .catch(err => console.log(err));
-    }
+        .then(res => this.setState({breeds: res.data.message}))
+        .catch(err => console.log(err)); 
+    }; 
+
 
 
     handleInputChange = event => {
-        this.setState({ search: event.target.value })
+        this.setState({search: event.target.value})
     }
 
     handleFormSubmit = event => {
@@ -43,6 +44,11 @@ class Search extends Component {
 
     }
 
+    listClickEvent = event => {
+        alert(event.target.innerText); 
+    }
+
+
     render() {
         return (
             <div>
@@ -50,13 +56,14 @@ class Search extends Component {
                     <SearchForm
                         handleFormSubmit={this.handleFormSubmit}
                         breeds={this.state.breeds}
+                        handleInputChange={this.handleInputChange}
                     />
                 </div>
                 <div>
                     <ul>
                         {
-                            this.state.breeds.map(res => {
-                                return <li value={res} key={res}>{res}</li>
+                            this.state.breeds.map( (res, id) => {
+                                return <li  onClick={this.listClickEvent} data-id={id} value={res} key={res}>{id} {res}</li>
                             } )
                         }
                     </ul>
