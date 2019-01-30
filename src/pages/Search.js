@@ -33,9 +33,10 @@ class Search extends Component {
 
     handleFormSubmit = event => {
         event.preventDefault();
-        API.dogSearch(this.state.search)
+        API.getDogBreeds(this.state.search)
             .then(res => {
-                console.log(this.state.breeds)
+                this.setState({results: res.data.message})
+                console.log(this.state.results); 
                 if (res.data.status === "error") {
                     throw new Error(res.data.message);
                 }
@@ -44,9 +45,7 @@ class Search extends Component {
 
     }
 
-    listClickEvent = event => {
-        alert(event.target.innerText); 
-    }
+    
 
 
     render() {
@@ -58,15 +57,9 @@ class Search extends Component {
                         breeds={this.state.breeds}
                         handleInputChange={this.handleInputChange}
                     />
-                </div>
-                <div>
-                    <ul>
-                        {
-                            this.state.breeds.map( (res, id) => {
-                                return <li  onClick={this.listClickEvent} data-id={id} value={res} key={res}>{id} {res}</li>
-                            } )
-                        }
-                    </ul>
+                    <SearchResults
+                        image ={this.state.results}
+                    />
                 </div>
             </div>
         );

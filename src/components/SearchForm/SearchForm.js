@@ -17,10 +17,13 @@ const SearchForm = props => (
                     placeholder="search for any time of a person"
                     id="personType"
                     className="form-control form-control-lg"
+                    list="breeds"
                 />
                 {
-                    <datalist>
+                    <datalist id="breeds">
+
                         {props.breeds.map(type => <option value={type} key={type} />)}
+
                     </datalist>
                 }
 
